@@ -1,0 +1,148 @@
+.col2{
+    /** about .page ratio  */
+flex:5;
+/** col21,22의 container요소니까 flex */
+display: flex;
+/** col21,22의 열방향 지정 */
+flex-direction: column;
+/** margin top,right,bottom,left */
+margin:15px 0px 15px 15px;
+
+}
+
+.col21{
+     /** about .col2 ratio  */
+flex:0.4;
+ /** col211,212의 container요소니까 flex */
+display: flex;
+}
+.col211{
+  /** about .col21 ratio  */
+flex:1;
+/**  text left align */
+text-align: left;
+/**  text thickness */
+font-weight: bold;
+
+
+}
+
+.col212{
+    /** about .col21 ratio  */
+flex:1;
+text-align: center;
+font-weight: bold;
+font-size:small;
+
+margin-top: 5px;
+}
+.col22{
+/** about .col2 ratio   */
+flex:7;
+      /** 배경 색깔 지정  */
+background-color: #ffffff;
+ /** 모서리 둥글게 */
+border-radius: 9px;
+display: flex;
+/** col21,22의 열방향 지정 */
+flex-direction: column;
+padding: 20px;
+margin-top: 3.5px;
+}
+
+
+.room2{
+flex-basis: 30%;
+display: flex;
+}
+
+.room101{
+flex-basis: 60%;
+display: flex;
+flex-direction: column;
+}
+
+.updatenews{
+flex-basis: 20%;
+}
+
+.room201{
+flex-basis: 80%;
+margin:0 10px 0 0;
+display: flex;
+flex-direction: column;
+}
+
+.line {
+flex-basis:25%;
+display: flex;
+text-align: center;
+margin: 2px 0 2px 0;
+}
+
+.e{
+flex-basis: 40%;
+background-color:darkslategray;
+border-radius: 9px;
+color: white;
+}
+
+.w{
+flex-basis: 40%;
+background-color:rgb(155, 27, 66);
+border-radius: 9px;
+color: white;
+
+}
+.box2{
+flex-basis: 70%;
+font-size:14px;
+border-bottom: #738186 dotted 1px; 
+
+
+}
+.room102{
+flex-basis: 40%;
+display: flex;
+flex-direction: column;
+}
+
+
+
+
+.todayscutepic{
+flex-basis: 20%;
+
+}
+
+.subtitle{
+font-weight: bold;
+font-family: 'Hi Melody', cursive;
+font-size: 25px;
+}
+
+.room202{
+flex-basis: 80%;
+background-image: url(https://images.unsplash.com/photo-1591348122449-02525d70379b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+background-size: contain;
+border-radius: 9px;
+
+}
+.room3{
+flex-basis: 7%;
+margin: 5px 0 0 0;
+
+
+}
+.room4{
+flex-basis: 60%;
+background-image: url("https://images.unsplash.com/photo-1647604321578-9d7c7ebf757b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80");
+}
+
+
+.b{
+    border:#afb5b8 1px solid;
+    border-radius: 9px;
+  }
+  
+  

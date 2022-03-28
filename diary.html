@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2021 MINI HOMEPAGE</title>
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/realdiary.css" />
+    
+
+  </head>
+  <body>
+    <div class="bookcover">
+      <div class="bookdot">
+        <div class="page">
+          <div class="col1 box" >
+            <div class="col11 box">        
+                TODAY 
+                <span class ="red">
+                  11
+                </span>
+                | TOTAL 15458
+            </div>
+            <div class="col12 box">
+              <div class="img b">
+              
+              </div>
+              <div class="txt1 ">
+                매일 매일 행복한 하루!<br><br>
+                <pans class="notice">
+                  아침마다 사과 먹기 <br>
+                  점심마다 견과류 먹기<br>
+                  저녁마다 맛난거 먹기
+                </span>
+              </div>
+              <div class="today ">
+                <hr><br>
+                2022/03/16
+                <br><br>
+                <select class="sel">
+                  <option class="op1">파도타기</option>
+                  <option class="op2">미니룸</option>
+                  <option class="op3">메뉴</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col2 box">
+            <div class="col21 box"> 
+              <div class="col211 box">
+                모두의 세상...★
+              </div>
+              <div class="col212 box">
+                htpps://urlurlurl
+              </div>
+            </div>
+            <div class="col22 box">
+                <div class="calen radi">
+                    <div class="rig">
+                        02.30 tue
+                    </div>
+                    <div class="left">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#" class="blue">4</a>
+                        <a href="#" class="red">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                        <a href="#" class="blue">11</a>
+                        <a href="#" class="red">12</a>
+                        <a href="#">13</a>
+                        <a href="#">14</a>
+                        <a href="#">15</a>
+                        <a href="#">16</a>
+                        <a href="#">17</a>
+                        <a href="#" class="blue">18</a>
+                        <a href="#" class="red">19</a>
+                        <a href="#">20</a>
+                        <a href="#">21</a>
+                        <a href="#">22</a>
+                        <a href="#">23</a>
+                        <a href="#">24</a>
+                        <a href="#" class="blue">25</a>
+                        <a href="#" class="red">26</a>
+                        <a href="#">27</a>
+                        <a href="#">28</a>
+                        <a href="#">29</a>
+                        <a href="#">30</a>
+                    </div>
+                </div>
+
+                <div class="dia ">
+                  <div class="con radi">
+                    <div class="date">2004.03.16</div>
+                    <div class="hello">오늘도 즐거운 하루 너무 좋아<br> 내일도 좋은 하루일거야 분명ㅎㅎ<br>하쿠나 마타다</div>
+                  </div>
+
+                  <div class="con radi">
+                    <div class="date">2004.05.16</div>
+                    <div class="hello">오늘은 바게트 빵 먹는 날!!!<br>블루베리 잼에 발라 먹을까 아니면 토스트를 해먹을까 ㅎㅎ </div>
+                  </div>
+
+
+                  <div class="button-box">
+                    <button class="diary-button font-neo" onclick="getTextFile()">
+                      <i class="fas fa-lock"></i>비밀일기 보기
+                    </button>
+                  </div>
+                  <div class="diary-box" id="secret-box">
+                    <div class="diary-date"> 비밀 일기</div>
+                    <div class="diary-text font-kyobohand" id="secret-diary"></div>
+                  </div>
+                </div>
+            
+            </div>
+          </div>
+          <div class="col3 box">
+            <div class="right1">
+              <a href="./home.html" class="right11 f">홈</a>
+              <a href="./diary.html" class="right12 f">다이어리</a>
+              <a href="./picbook.html" class="right13 f">사진첩</a>
+              <a href="./guestbook.html" class="right14 f">방명록</a>
+            </div>
+            <div class="right2"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script>
+       function getTextFile() {
+       var input = document.createElement("input");
+       input.type = "file";
+       input.accept = "text/plain";
+       input.onchange = function (event) {
+       processFile(event.target.files[0]);
+       };
+       input.click();
+       }
+
+       function processFile(file) {
+       var reader = new FileReader();
+       reader.readAsText(file, "utf-8");
+
+       reader.onload = function () {
+        document.getElementById("secret-diary").innerText = reader.result;
+        document.getElementById("secret-box").style.display = "block";
+    };
+  }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+.col2{
+    /** about .page ratio  */
+flex:5;
+/** col21,22의 container요소니까 flex */
+display: flex;
+/** col21,22의 열방향 지정 */
+flex-direction: column;
+/** margin top,right,bottom,left */
+margin:15px 0px 15px 15px;
+
+}
+
+.col21{
+     /** about .col2 ratio  */
+flex:0.4;
+ /** col211,212의 container요소니까 flex */
+display: flex;
+}
+.col211{
+  /** about .col21 ratio  */
+flex:1;
+/**  text left align */
+text-align: left;
+/**  text thickness */
+font-weight: bold;
+
+
+}
+
+.col212{
+    /** about .col21 ratio  */
+flex:1;
+text-align: center;
+font-weight: bold;
+font-size:small;
+
+margin-top: 5px;
+}
+.col22{
+/** about .col2 ratio   */
+flex:7;
+      /** 배경 색깔 지정  */
+background-color: #ffffff;
+ /** 모서리 둥글게 */
+border-radius: 9px;
+
+/** col21,22의 열방향 지정 */
+
+
+margin-top: 3.5px;
+overflow: scroll;
+}
+
+
+.albumpic{
+  
+    width: 500px;
+    margin: 30px 0;
+}
+.b{
+    border:#afb5b8 1px solid;
+    border-radius: 9px;
+  }
+  
+
+.albumtitle1{
+    background-color: rgb(233, 225, 180);
+    height: 35px;
+    margin: 30px 0;
+    text-align: center;
+    font-weight: bold;
+    
+    
+}
+.ex{
+    height: 30px;
+    margin: 30px 10px;
+}
+
+.img1{
+    margin: 20px ;
+}

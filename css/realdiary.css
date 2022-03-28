@@ -1,0 +1,126 @@
+.col2{
+    /** about .page ratio  */
+flex:5;
+/** col21,22의 container요소니까 flex */
+display: flex;
+/** col21,22의 열방향 지정 */
+flex-direction: column;
+/** margin top,right,bottom,left */
+margin:15px 0px 15px 15px;
+
+}
+
+.col21{
+     /** about .col2 ratio  */
+flex:0.4;
+ /** col211,212의 container요소니까 flex */
+display: flex;
+}
+.col211{
+  /** about .col21 ratio  */
+flex:1;
+/**  text left align */
+text-align: left;
+/**  text thickness */
+font-weight: bold;
+
+
+}
+
+.col212{
+    /** about .col21 ratio  */
+flex:1;
+text-align: center;
+font-weight: bold;
+font-size:small;
+
+margin-top: 5px;
+}
+
+.col22{
+/** about .col2 ratio   */
+flex:7;
+      /** 배경 색깔 지정  */
+background-color: #ffffff;
+ /** 모서리 둥글게 */
+border-radius: 9px;
+
+/** col21,22의 열방향 지정 */
+
+
+margin-top: 3.5px;
+display: flex;
+flex-direction: column;
+}
+
+.calen{
+    flex:0.3;
+    display: flex;
+  
+}
+.rig{
+    flex:0.3;
+    margin: 20px 0 0 30px;
+}
+.left{
+    flex:1;
+    margin: 10px 15px 0 0;
+    font-size: small;
+
+}
+
+.dia{
+    flex:2;
+    overflow-y:scroll;
+    height: 2000px;
+   
+}
+.con{
+  position: relative;
+    
+   
+}
+.hello{
+    text-align: center;
+    padding: 30px;
+    
+}
+.radi{
+    border: 1px solid rgb(121, 116, 111);
+    border-radius: 10px;
+   margin: 20px;
+}
+
+
+a{
+    padding: 0 0 5px 0;
+   
+}
+
+
+.diary-button{
+    display: block;
+    margin: auto;
+    border:none;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+    font-size: 30px;
+    font-weight:lighter;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.diary-button:hover{
+    background-color: rgb(60, 139, 14);
+    color: #ffffff;
+    border-radius: 10px;
+    transition: 500ms ease all;
+}
+
+#secret-box{
+    display: none;
+    border:2px dashed gray;
+    width: auto;
+    text-align: center;
+}
